@@ -1,0 +1,42 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="TLE_Form.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="TLEName" Type="System.String" Scope="User">
+      <Value Profile="(Default)">TERRA</Value>
+    </Setting>
+    <Setting Name="TLELine1" Type="System.String" Scope="User">
+      <Value Profile="(Default)">1 25994U 99068A   21305.91857737  .00000151  00000-0  43376-4 0  9993</Value>
+    </Setting>
+    <Setting Name="TLELine2" Type="System.String" Scope="User">
+      <Value Profile="(Default)">2 25994  98.1642  17.7389 0001135  93.0803  22.4464 14.57128334163368</Value>
+    </Setting>
+    <Setting Name="GPSLog" Type="System.Double" Scope="User">
+      <Value Profile="(Default)">108.85</Value>
+    </Setting>
+    <Setting Name="GPSLat" Type="System.Double" Scope="User">
+      <Value Profile="(Default)">34.16</Value>
+    </Setting>
+    <Setting Name="GPSHeight" Type="System.Double" Scope="User">
+      <Value Profile="(Default)">400</Value>
+    </Setting>
+    <Setting Name="PridectDays" Type="System.Double" Scope="User">
+      <Value Profile="(Default)">5</Value>
+    </Setting>
+    <Setting Name="MinEl" Type="System.Double" Scope="User">
+      <Value Profile="(Default)">3</Value>
+    </Setting>
+    <Setting Name="TrackTime" Type="System.Double" Scope="User">
+      <Value Profile="(Default)">1</Value>
+    </Setting>
+    <Setting Name="LeadDueTime" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">100</Value>
+    </Setting>
+    <Setting Name="MaxEl" Type="System.Double" Scope="User">
+      <Value Profile="(Default)">25</Value>
+    </Setting>
+    <Setting Name="URL" Type="System.String" Scope="User">
+      <Value Profile="(Default)">https://celestrak.com/NORAD/elements/active.txt</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>
