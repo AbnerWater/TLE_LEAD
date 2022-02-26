@@ -132,13 +132,13 @@ namespace TLE_Form
             StreamWriter sw = new StreamWriter(fs);
             DateTime start = missionList[index].Start.ToLocalTime();
             DateTime end= missionList[index].End.ToLocalTime();
-            TimeSpan due = TimeSpan.FromMilliseconds(100);
+            TimeSpan due = TimeSpan.FromMilliseconds(new Properties.Settings().LeadDueTime);
             while(start< end)
             {
                 string line = string.Format("{0} {1:f4} {2:f4}",
-                    start.ToString("yyyy.MM.dd-HH:mm:ss:fff"),
-                    location.Observe(sat, start).Azimuth.Degrees,
-                    location.Observe(sat, start).Elevation.Degrees);
+                    start.ToString("yyyy.MM.dd HH:mm:ss:fff"),
+                    location.Observe(sat, start).Elevation.Degrees,
+                    location.Observe(sat, start).Azimuth.Degrees);
                 sw.WriteLine(line);
                 start += due;
             }
@@ -161,6 +161,7 @@ namespace TLE_Form
                 MessageBox.Show(ex.ToString());
             }
         }
+
         public bool HttpDownloadFile(string url)
         {
             ServicePointManager.SecurityProtocol = SecurityProtocolType.Tls12;
@@ -293,6 +294,11 @@ namespace TLE_Form
                     MessageBox.Show("导入TLE文件格式不支持！");
                 }
             }
+        }
+        private void 太阳星历计算ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmSunCal sun = new FrmSunCal((double)numLog.Value, (double)numLat.Value);
+            sun.ShowDialog();
         }
     }
 }
