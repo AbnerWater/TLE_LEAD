@@ -8,7 +8,7 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyTitle("TEL星历解析软件")]
 [assembly: AssemblyDescription("用于解析TEL星历数据，生成对应的引导文件")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("西安星云信通通信科技有限公司")]
+[assembly: AssemblyCompany("西安交通大学")]
 [assembly: AssemblyProduct("TEL星历解析软件")]
 [assembly: AssemblyCopyright("Copyright ©  2021")]
 [assembly: AssemblyTrademark("")]

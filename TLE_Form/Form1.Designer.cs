@@ -105,7 +105,7 @@
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Padding = new System.Windows.Forms.Padding(11, 4, 0, 4);
-            this.menuStrip1.Size = new System.Drawing.Size(1439, 46);
+            this.menuStrip1.Size = new System.Drawing.Size(1439, 48);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -116,7 +116,7 @@
             this.打开TLE数据库ToolStripMenuItem,
             this.更新TLE数据库ToolStripMenuItem});
             this.编辑ToolStripMenuItem.Name = "编辑ToolStripMenuItem";
-            this.编辑ToolStripMenuItem.Size = new System.Drawing.Size(82, 38);
+            this.编辑ToolStripMenuItem.Size = new System.Drawing.Size(82, 40);
             this.编辑ToolStripMenuItem.Text = "编辑";
             // 
             // 导入TLEToolStripMenuItem
@@ -143,21 +143,21 @@
             // 设置ToolStripMenuItem
             // 
             this.设置ToolStripMenuItem.Name = "设置ToolStripMenuItem";
-            this.设置ToolStripMenuItem.Size = new System.Drawing.Size(82, 38);
+            this.设置ToolStripMenuItem.Size = new System.Drawing.Size(82, 40);
             this.设置ToolStripMenuItem.Text = "设置";
             this.设置ToolStripMenuItem.Click += new System.EventHandler(this.设置ToolStripMenuItem_Click);
             // 
             // 关于ToolStripMenuItem
             // 
             this.关于ToolStripMenuItem.Name = "关于ToolStripMenuItem";
-            this.关于ToolStripMenuItem.Size = new System.Drawing.Size(82, 38);
+            this.关于ToolStripMenuItem.Size = new System.Drawing.Size(82, 40);
             this.关于ToolStripMenuItem.Text = "关于";
             this.关于ToolStripMenuItem.Click += new System.EventHandler(this.关于ToolStripMenuItem_Click);
             // 
             // splitContainer1
             // 
             this.splitContainer1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.splitContainer1.Location = new System.Drawing.Point(0, 46);
+            this.splitContainer1.Location = new System.Drawing.Point(0, 48);
             this.splitContainer1.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
             this.splitContainer1.Name = "splitContainer1";
             // 
@@ -172,7 +172,7 @@
             // 
             this.splitContainer1.Panel2.Controls.Add(this.groupBox4);
             this.splitContainer1.Panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.splitContainer1_Panel2_Paint);
-            this.splitContainer1.Size = new System.Drawing.Size(1439, 973);
+            this.splitContainer1.Size = new System.Drawing.Size(1439, 971);
             this.splitContainer1.SplitterDistance = 653;
             this.splitContainer1.SplitterWidth = 7;
             this.splitContainer1.TabIndex = 1;
@@ -554,7 +554,7 @@
             this.groupBox4.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
             this.groupBox4.Name = "groupBox4";
             this.groupBox4.Padding = new System.Windows.Forms.Padding(6, 5, 6, 5);
-            this.groupBox4.Size = new System.Drawing.Size(779, 973);
+            this.groupBox4.Size = new System.Drawing.Size(779, 971);
             this.groupBox4.TabIndex = 0;
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "任务列表";
@@ -573,7 +573,7 @@
             this.dgvMission.RowHeadersWidth = 82;
             this.dgvMission.RowTemplate.Height = 23;
             this.dgvMission.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvMission.Size = new System.Drawing.Size(767, 939);
+            this.dgvMission.Size = new System.Drawing.Size(767, 937);
             this.dgvMission.TabIndex = 0;
             // 
             // contextMenuStrip1
@@ -602,7 +602,7 @@
             // 太阳星历计算ToolStripMenuItem
             // 
             this.太阳星历计算ToolStripMenuItem.Name = "太阳星历计算ToolStripMenuItem";
-            this.太阳星历计算ToolStripMenuItem.Size = new System.Drawing.Size(178, 38);
+            this.太阳星历计算ToolStripMenuItem.Size = new System.Drawing.Size(178, 40);
             this.太阳星历计算ToolStripMenuItem.Text = "太阳星历计算";
             this.太阳星历计算ToolStripMenuItem.Click += new System.EventHandler(this.太阳星历计算ToolStripMenuItem_Click);
             // 

@@ -21,5 +21,10 @@ namespace TLE_Form
         {
             label1.Text = string.Format(label1.Text, Application.ProductVersion.ToString());
         }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
