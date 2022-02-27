@@ -30,10 +30,10 @@
       <Value Profile="(Default)">1</Value>
     </Setting>
     <Setting Name="LeadDueTime" Type="System.Int32" Scope="User">
-      <Value Profile="(Default)">100</Value>
+      <Value Profile="(Default)">1000</Value>
     </Setting>
     <Setting Name="MaxEl" Type="System.Double" Scope="User">
-      <Value Profile="(Default)">25</Value>
+      <Value Profile="(Default)">15</Value>
     </Setting>
     <Setting Name="URL" Type="System.String" Scope="User">
       <Value Profile="(Default)">https://celestrak.com/NORAD/elements/active.txt</Value>

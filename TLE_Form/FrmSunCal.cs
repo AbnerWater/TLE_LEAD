@@ -13,13 +13,14 @@ namespace TLE_Form
 {
     public partial class FrmSunCal : Form
     {
-        private double log;
-        private double lat;
-        public FrmSunCal(double logi,double lati)
+        private GlobalPosition position;
+        public FrmSunCal(double logi,double lati,double height)
         {
             InitializeComponent();
-            log = logi;
-            lat = lati;
+            position = new GlobalPosition();
+            position.Longitude = logi;
+            position.Latitude = lati;
+            position.Altitude = height;
         }
         private void FrmSunCal_Load(object sender, EventArgs e)
         {
@@ -41,9 +42,9 @@ namespace TLE_Form
             TimeSpan due = TimeSpan.FromMilliseconds(new Properties.Settings().LeadDueTime);
             while (start < end)
             {
-                SunCal.CalculateSunPosition(start, lat, log, out az, out el);
+                SunCal.SolarPosition(position, start, out az, out el);
                 string line = string.Format("{0} {1:f4} {2:f4}",
-                    start.ToString("yyyy.MM.dd HH:mm:ss:fff"), el,az);
+                    start.ToString("yyyy.MM.dd HH:mm:ss.fff"), el,az);
                 sw.WriteLine(line);
                 start += due;
             }
@@ -55,7 +56,7 @@ namespace TLE_Form
             try
             {
                 string fileName = string.Format("{0:s}_{1:s}.txt",
-                    timeStart.Value.ToString(), timeStart.Value + TimeSpan.FromMinutes((double)numPridectMin.Value).ToString());
+                    timeStart.Value.ToString(), (timeStart.Value + TimeSpan.FromMinutes((double)numPridectMin.Value)).ToString());
                 fileName = fileName.Replace(':', '_');
                 fileName = fileName.Replace('/', '_');
                 generateLeadFile(fileName);
