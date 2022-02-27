@@ -297,7 +297,7 @@ namespace TLE_Form
         }
         private void 太阳星历计算ToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            FrmSunCal sun = new FrmSunCal((double)numLog.Value, (double)numLat.Value);
+            FrmSunCal sun = new FrmSunCal((double)numLog.Value, (double)numLat.Value, (double)numHeight.Value);
             sun.ShowDialog();
         }
     }
