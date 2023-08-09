@@ -38,7 +38,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="SGP.NET">
-      <HintPath>..\packages\SGP.NET.dll</HintPath>
+      <HintPath>..\SGP.NET.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />

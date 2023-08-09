@@ -30,16 +30,16 @@
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.numTrackDue = new System.Windows.Forms.NumericUpDown();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.numMaxEl = new System.Windows.Forms.NumericUpDown();
             this.btnApply = new System.Windows.Forms.Button();
             this.btnCancel = new System.Windows.Forms.Button();
-            this.numMaxEl = new System.Windows.Forms.NumericUpDown();
-            this.numTrackDue = new System.Windows.Forms.NumericUpDown();
             this.groupBox1.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numMaxEl)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numTrackDue)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numMaxEl)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBox1
@@ -71,6 +71,20 @@
             this.tableLayoutPanel1.Size = new System.Drawing.Size(356, 120);
             this.tableLayoutPanel1.TabIndex = 0;
             // 
+            // numTrackDue
+            // 
+            this.numTrackDue.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.numTrackDue.Location = new System.Drawing.Point(176, 43);
+            this.numTrackDue.Maximum = new decimal(new int[] {
+            1000,
+            0,
+            0,
+            0});
+            this.numTrackDue.Name = "numTrackDue";
+            this.numTrackDue.Size = new System.Drawing.Size(177, 21);
+            this.numTrackDue.TabIndex = 3;
+            this.numTrackDue.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
             // label1
             // 
             this.label1.AutoSize = true;
@@ -92,6 +106,16 @@
             this.label2.TabIndex = 1;
             this.label2.Text = "引导文件时间间隔(ms)";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // numMaxEl
+            // 
+            this.numMaxEl.DecimalPlaces = 2;
+            this.numMaxEl.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.numMaxEl.Location = new System.Drawing.Point(176, 3);
+            this.numMaxEl.Name = "numMaxEl";
+            this.numMaxEl.Size = new System.Drawing.Size(177, 21);
+            this.numMaxEl.TabIndex = 2;
+            this.numMaxEl.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // btnApply
             // 
@@ -115,30 +139,6 @@
             this.btnCancel.UseVisualStyleBackColor = true;
             this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
             // 
-            // numMaxEl
-            // 
-            this.numMaxEl.DecimalPlaces = 2;
-            this.numMaxEl.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.numMaxEl.Location = new System.Drawing.Point(176, 3);
-            this.numMaxEl.Name = "numMaxEl";
-            this.numMaxEl.Size = new System.Drawing.Size(177, 21);
-            this.numMaxEl.TabIndex = 2;
-            this.numMaxEl.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // numTrackDue
-            // 
-            this.numTrackDue.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.numTrackDue.Location = new System.Drawing.Point(176, 43);
-            this.numTrackDue.Maximum = new decimal(new int[] {
-            1000,
-            0,
-            0,
-            0});
-            this.numTrackDue.Name = "numTrackDue";
-            this.numTrackDue.Size = new System.Drawing.Size(177, 21);
-            this.numTrackDue.TabIndex = 3;
-            this.numTrackDue.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
             // FrmSetting
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
@@ -155,8 +155,8 @@
             this.groupBox1.ResumeLayout(false);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numMaxEl)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numTrackDue)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numMaxEl)).EndInit();
             this.ResumeLayout(false);
 
         }

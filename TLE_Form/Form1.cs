@@ -137,8 +137,8 @@ namespace TLE_Form
             {
                 string line = string.Format("{0} {1:f4} {2:f4}",
                     start.ToString("yyyy.MM.dd HH:mm:ss:fff"),
-                    location.Observe(sat, start).Elevation.Degrees,
-                    location.Observe(sat, start).Azimuth.Degrees);
+                    location.Observe(sat, start).Azimuth.Degrees,
+                    location.Observe(sat, start).Elevation.Degrees);
                 sw.WriteLine(line);
                 start += due;
             }
